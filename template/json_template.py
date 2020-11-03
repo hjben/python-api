@@ -19,7 +19,7 @@ input_parser.add_argument('input_data', type=str, help='input data', location='f
 
 # Custom API class
 @ns_conf.route("")
-@ns_conf.param("input_data", "input json")
+@ns_conf.param("input_json", "json input")
 class Test(Resource):
     @staticmethod
     @ns_conf.expect(input_parser)
@@ -28,7 +28,7 @@ class Test(Resource):
         input_json = request.get_json()
 
         if not input_json:
-            input_json = eval(input_parser.parse_args().pop('input_data'))
+            input_json = eval(input_parser.parse_args().pop('input_json'))
 
         # place custom variables and function
         #
