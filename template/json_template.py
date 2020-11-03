@@ -9,7 +9,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-api = Api(app, version='1.0', title='Test API', doc='/__swagger__', description='API prediction sample')
+api = Api(app, version='1.0', title='Test API', doc='/__swagger__', description='A test API')
 app.config.SWAGGER_UI_DOC_EXPANSION = 'list'
 ns_conf = api.namespace('test', description='Test operations')
 
