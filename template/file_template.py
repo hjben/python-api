@@ -27,7 +27,6 @@ class ConferenceList(Resource):
 
         if request.files:
             input_file = request.files['file']
-
         elif upload_parser.parse_args():
             input_file = upload_parser.parse_args().pop('file')
 
