@@ -18,7 +18,7 @@ upload_parser.add_argument('file', location='files', type=FileStorage)
 
 # Custom API class
 @ns_conf.route("/")
-class ConferenceList(Resource):
+class Test(Resource):
     @staticmethod
     @ns_conf.expect(upload_parser)
     def post():
