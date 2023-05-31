@@ -1,2 +1,2 @@
-# flask-swagger-api
-Templates and samples for swagger API docs, with python-flask 
+# python-api
+Templates and samples of python backend frameworks (flask, fastapi)
